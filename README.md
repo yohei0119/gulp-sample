@@ -22,11 +22,11 @@ $ npm run build
 ```
 ## 関連リンク
 - wordpress sample  
-作成したソースをwordpressに組み込んだサンプルは、下記よりご確認いただけます  
+作成したソースをwordpressに組み込んだサンプルサイトは、下記よりご確認いただけます  
   https://wp-sample.raindrop.jp/  
 
 - original theme sample  
-作成したオリジナルテーマのサンプルは、下記よりご確認いただけます  
+作成したオリジナルテーマのコードは、下記よりご確認いただけます  
   https://github.com/yohei0119/wordpress-sample
 
 - xd sample  
