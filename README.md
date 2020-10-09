@@ -20,4 +20,11 @@ $ npm run dev
 本番環境ビルド
 $ npm run build
 ```
+## 関連リンク
+- wordpress sample  
+作成したソースをwordpressに組み込んだサンプルは、以下のアドレスで確認できます  
+  https://wp-sample.raindrop.jp/  
 
+- xd sample  
+今回作成したサンプルサイトのXDファイルは、以下のアドレスで確認できます  
+  https://xd.adobe.com/view/3d954b92-14fa-4b03-b4b0-322ea5badb66-68c6/
