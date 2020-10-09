@@ -25,7 +25,7 @@ $ npm run build
 作成したソースをwordpressに組み込んだサンプルは、下記よりご確認いただけます  
   https://wp-sample.raindrop.jp/  
 
-- orijinal theme sample  
+- original theme sample  
 作成したオリジナルテーマのサンプルは、下記よりご確認いただけます  
   https://github.com/yohei0119/wordpress-sample
 
