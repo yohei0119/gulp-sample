@@ -1,0 +1,15 @@
+extends include/_layout.pug
+
+block head
+  - var title = 'Wordpress Sample'
+  - var description = 'Top Page Description'
+  - var keywords = 'Top Page Keywords'
+
+block main
+  block mainVisual
+    - var pageName = 'Top'
+    - var catchcopy = 'Catchcopy'
+    - var text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+    include include/_main-visual.pug
+  include include/_pickup.pug
+  include include/_top-news.pug

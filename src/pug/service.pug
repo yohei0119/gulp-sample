@@ -1,0 +1,14 @@
+extends include/_layout.pug
+
+block head
+  - var title = 'Service – WordPress Sample'
+  - var description = 'Service Page Description'
+  - var keywords = 'Service Page Keywords'
+
+block main
+  block mainVisual
+    - var pageName = 'Service'
+    - var pageTitle = 'Service'
+    - var text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+    include include/_main-visual.pug
+  include include/_service.pug

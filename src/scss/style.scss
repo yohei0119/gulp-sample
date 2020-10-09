@@ -1,0 +1,19 @@
+// ネストのテスト
+div {
+  p {
+    font-weight: bold;
+  }
+}
+
+// 変数のテスト
+$fontColor: #000;
+
+h1 {
+  color: $fontColor;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

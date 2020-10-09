@@ -1,0 +1,14 @@
+extends include/_layout.pug
+
+block head
+  - var title = 'Single – WordPress Sample'
+  - var description = 'Single Page Description'
+  - var keywords = 'Single Page Keywords'
+
+block main
+  block mainVisual
+    - var pageName = 'Single'
+    - var pageTitle = 'Single'
+    - var text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+    include include/_main-visual.pug
+  include include/_single.pug

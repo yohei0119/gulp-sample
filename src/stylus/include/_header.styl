@@ -1,0 +1,116 @@
+@import '_mixins'
+
+#header
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 75px
+  overflow hidden
+  clear both
+  line-height 75px
+  background-color #fff
+  box-shadow 0 1px 3px 0 rgba(0, 0, 0, .1)
+  box-sizing border-box
+  z-index 2
+  h1
+    float left
+    width auto
+    height 75px
+    line-height 75px  
+    font-size 1.0rem
+    color $primary-color 
+  nav.g-navi
+    float right
+    width auto
+    ul
+      list-style-type none
+      li
+        float left
+        margin-left 30px
+        a
+          color $primary-color  
+          text-decoration none
+          font-size 1.0rem
+          &:hover
+            text-decoration underline
+.g-navi-btn
+  display none
+.g-navi-sp
+  display none
+/*
+ * sp
+ */  
++breakpoint(sm)
+  .g-navi-btn
+    display block
+    position fixed
+    right 10px
+    top 17px    
+    width 42px
+    height 42px
+    cursor pointer
+    text-align center
+    z-index 4
+    span
+      display block
+      position absolute
+      width 30px
+      height 1px
+      left 6px
+      background-color $primary-color 
+      transition 0.3s ease-in-out 
+      &:nth-child(1)
+        top 10px
+      &:nth-child(2)
+        top 20px
+      &:nth-child(3)
+        top 30px 
+    &.open 
+      span
+        &:nth-child(1)
+          top 16px
+          left 6px
+          background #fff
+          transform rotate(-45deg)
+        &:nth-child(2)
+        &:nth-child(3)
+          top 16px
+          background #fff
+          transform rotate(45deg)
+  .g-navi-sp
+    display flex
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    align-items center
+    justify-content center
+    background rgba(44, 44, 84, .95)
+    transform translateY(-100%)
+    transition all 0.6s  
+    z-index 3
+    ul
+      width 100%
+      margin 0
+      padding 0
+      text-align center
+      li
+        float none
+        margin-left 0
+        padding-bottom 2rem
+        &:last-child
+          padding-bottom 0
+        a
+          display block
+          width 100%  
+          padding 0  
+          color #fff 
+          text-decoration none
+          font-size 1.0rem
+    // このクラスを、jQueryで付与・削除する
+    &.open
+      transform translateY(0%)
+  .g-navi
+    display none

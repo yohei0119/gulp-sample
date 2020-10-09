@@ -1,0 +1,43 @@
+@import '_mixins'
+
+#top-news
+  margin-bottom 80px
+  ul 
+    width 100%
+    margin 0
+    padding 0
+    list-style-type none
+    border-top 1px solid $line-color
+    border-bottom 1px solid $line-color
+    li 
+      border-bottom 1px solid $line-color  
+      &:last-child
+        border-bottom none
+      a
+        display block
+        width 100%
+        padding 1.25rem
+        color $primary-color 
+        box-sizing border-box
+        text-decoration none
+        .date
+          margin-right 1rem
+        .text
+          font-weight 500
+          margin-right .75rem
+        &:hover
+          text-decoration none
+          background-color $light-color
+          .text
+            text-decoration underline
+/*
+ * sp
+ */  
++breakpoint(sm)
+  #top-news 
+    ul 
+      li 
+        a 
+          .date
+            display block
+            width 100%

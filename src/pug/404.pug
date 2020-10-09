@@ -1,0 +1,14 @@
+extends include/_layout.pug
+
+block head
+  - var title = 'ページが見つかりませんでした – WordPress Sample'
+  - var description = '404 Page Description'
+  - var keywords = '404 Page Keywords'
+
+block main
+  block mainVisual
+    - var pageName = '404'
+    - var pageTitle = '404'
+    - var text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+    include include/_main-visual.pug
+  include include/_404.pug

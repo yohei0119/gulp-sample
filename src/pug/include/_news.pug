@@ -1,0 +1,29 @@
+section(id="news" class="container")
+  .row
+    div(class="col-12 col-lg-12 col-md-12 col-sm-12")
+      h3.title News1
+  ul(class="row mb50")
+    - for (var x = 0; x < 3; x++)
+      li(class="col-12 col-lg-6 col-md-12 col-sm-12")              
+        .media
+          .media-image
+            img(src="image/dummy.png")
+          .media-body
+            p 2020-09-30
+            p
+              span.fw500 News Title                 
+            a(href="/single.html" class="btn btn-primary rounded-pill") Button
+  .row
+    div(class="col-12 col-lg-12 col-md-12 col-sm-12")
+      h3.title News2
+  ul(class="row mb50")
+    - for (var x = 0; x < 2; x++)
+      li(class="col-12 col-lg-6 col-md-12 col-sm-12")              
+        .media
+          .media-image
+            img(src="image/dummy.png")
+          .media-body
+            p 2020-09-30
+            p
+              span.fw500 News Title                 
+            a(href="/single.html" class="btn btn-primary rounded-pill") Button            

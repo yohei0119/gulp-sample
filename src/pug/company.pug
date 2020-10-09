@@ -1,0 +1,15 @@
+extends include/_layout.pug
+
+block head
+  - var title = 'Company – WordPress Sample'
+  - var description = 'Company Page Description'
+  - var keywords = 'Company Page Keywords'
+
+block main
+  block mainVisual
+    - var pageName = 'Company'
+    - var pageTitle = 'Company'
+    - var text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+    include include/_main-visual.pug
+  include include/_company.pug
+  include include/_map.pug

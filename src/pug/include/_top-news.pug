@@ -1,0 +1,14 @@
+section(id="top-news" class="container")
+  .row
+    div(class="col-12 col-lg-12 col-md-12 col-sm-12")
+      h3.title News
+  .row
+    div(class="col-12 col-lg-12 col-md-12 col-sm-12")
+      ul
+        - for (var x = 0; x < 4; x++)
+          li: a(href="/single.html")
+            span.date 2020-09-30
+            span.text News Title
+  div(class="row justify-content-center mt40")
+    div(class="col-8 col-lg-6 col-md-6 col-sm-8")
+      a(href="/news.html" class="btn btn-light rounded-pill more-btn") More

@@ -1,0 +1,17 @@
+block mainVisual
+section#main-visual
+  .main-visual-image
+    img(src="image/dummy.png")
+  .main-visual-body
+    .container
+      .row
+        div(class="col-12 col-lg-12 col-md-12 col-sm-12")
+          - if (pageName === 'Top')        
+            p.catchcopy #{catchcopy}
+            p.text #{text}
+            p.btn-area
+              a(href="/company.html")
+                button(type="button" class="btn btn-primary rounded-pill") Button
+          - else 
+            h2.page-title #{pageTitle}
+            p.text #{text}

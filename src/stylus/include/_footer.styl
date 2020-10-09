@@ -1,0 +1,50 @@
+@import '_mixins'
+
+#footer
+  width 100%
+  padding 80px 30px
+  overflow hidden
+  clear both  
+  color #fff
+  background $primary-color 
+  .copyright
+    float left
+    width auto
+    padding-top .75rem
+    font-size 1rem
+  ul
+    float right
+    display flex
+    width auto
+    list-style-type none
+    li
+      display flex
+      width 42px
+      height 42px
+      margin-left 24px
+      justify-content center
+      align-items center
+      border 1px solid #dee2e6
+      border-radius 50%
+      &:first-child
+        margin-left 0
+      a
+        color #fff
+        font-size 24px
+/*
+ * sp
+ */  
++breakpoint(sm)
+  #footer
+    .copyright
+      float none
+      width 100%
+      margin-bottom 30px 
+      padding-top 0
+      text-align center
+    ul
+      float none
+      display flex
+      width 100%
+      list-style-type none
+      justify-content center

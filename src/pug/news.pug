@@ -1,0 +1,14 @@
+extends include/_layout.pug
+
+block head
+  - var title = 'News – WordPress Sample'
+  - var description = 'News Page Description'
+  - var keywords = 'News Page Keywords'
+
+block main
+  block mainVisual
+    - var pageName = 'News'
+    - var pageTitle = 'News'
+    - var text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+    include include/_main-visual.pug
+  include include/_news.pug

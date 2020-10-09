@@ -1,0 +1,14 @@
+extends include/_layout.pug
+
+block head
+  - var title = 'Contact – WordPress Sample'
+  - var description = 'Contact Page Description'
+  - var keywords = 'Contact Page Keywords'
+
+block main
+  block mainVisual
+    - var pageName = 'Contact'
+    - var pageTitle = 'Contact'
+    - var text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+    include include/_main-visual.pug
+  include include/_contact.pug

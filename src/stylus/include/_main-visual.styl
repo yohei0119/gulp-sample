@@ -1,0 +1,78 @@
+@import '_mixins'
+
+#main-visual
+  display flex
+  position relative
+  height 560px
+  margin-top 75px
+  margin-bottom 80px
+  padding 0
+  align-items center
+  justify-content center
+  z-index 0
+  .main-visual-image
+    width 100%
+    height 100%
+    animation 2.4s fadein
+  @keyframes fadein 
+    from  
+      opacity 0 
+    to 
+      opacity 1  
+  .main-visual-body
+    position absolute
+    width 100%
+    z-index 1
+    p.catchcopy
+    h2.page-title
+      margin-bottom 1rem
+      font-size 3rem
+      font-weight 400
+      animation-name faderight
+      animation-duration 1.2s
+      transition-delay 2.4s      
+    @keyframes faderight 
+      from 
+        opacity 0
+        transform translateX(-60px)
+      to
+        opacity 1
+        transform translateX(0)
+    p.text
+      width 50%
+      font-size 1.2rem
+      font-weight 400
+      animation-name fadebottom1
+      animation-duration 1.2s
+      transition-delay 2.4s       
+    @keyframes fadebottom1 
+      from
+        opacity 0
+        transform translateY(60px)
+      to
+        opacity 1
+        transform translateY(0)
+    a
+      .btn
+        width 240px    
+    p.btn-area
+      animation-name fadebottom2
+      animation-duration 1.2s
+      transition-delay 2.4s
+    @keyframes fadebottom2 
+      from 
+        opacity 0
+        transform translateY(80px)
+      to 
+        opacity 1
+        transform translateY(0)
+/*
+ * sp
+ */  
++breakpoint(sm)
+  #main-visual 
+    .main-visual-body 
+      p.text
+        width 85%
+        font-size 1rem
+        font-weight 400

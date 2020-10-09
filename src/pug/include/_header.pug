@@ -1,0 +1,22 @@
+header#header
+  .container
+    .row
+      div(class=["col-12", "col-lg-12", "col-md-12", "col-sm-12"])
+        h1 Wordpress Sample
+        nav.g-navi
+          ul
+            li: a(href="/") Home
+            li: a(href="/service.html") Service
+            li: a(href="/news.html") News
+            li: a(href="/company.html") Company
+            li: a(href="/contact.html") Contact
+.g-navi-btn
+  - for (var x = 0; x < 3; x++)
+    span
+nav.g-navi-sp
+  ul
+    li: a(href="/") Home
+    li: a(href="/service.html") Service
+    li: a(href="/news.html") News
+    li: a(href="/company.html") Company
+    li: a(href="/contact.html") Contact

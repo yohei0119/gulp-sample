@@ -1,0 +1,120 @@
+#wpadminbar
+  display none
+*
+  margin 0
+  padding 0
+html 
+body
+  color $primary-color 
+  font-size 100%
+  margin 0  
+  padding 0
+img
+  width 100%
+  height 100%
+  object-fit cover
+  object-position right bottom
+/*
+ * bootstrap
+ */          
+.btn
+  min-width 100px
+  &:focus
+  &:active
+    box-shadow none !important
+.btn-primary
+  color #fff
+  background-color $primary-color !important
+  border-color $primary-color !important
+  &:hover
+    color #fff
+    background-color $primary-hover-color !important
+    border-color $primary-hover-color !important
+.btn-outline-primary
+  color $primary-color
+  border-color $line-color
+  &:hover
+    color $primary-color
+    background-color $light-color
+    border-color #ccc
+  &:visited
+    color $primary-color
+    border-color $line-color
+.btn-light
+  color $primary-color
+  background-color $light-color
+  border-color $light-color
+  &:hover 
+    color $primary-color
+    background-color #ddd !important
+    border-color #ddd !important
+.card
+  margin-bottom 30px
+.table
+  color $primary-color
+  tbody
+    th
+      width 25%
+      font-weight 500
+    td 
+      ul
+        padding-left 1.2rem
+/*
+ * common
+ */
+.title
+  margin-bottom 60px
+  font-size 2.0rem
+  text-align center
+  transition all 0.6s linear
+  transform translateY(-20px) 
+  opacity 0 
+  &.down
+    transform translateY(0px)   
+    opacity 1
+.card-image
+  width 100%
+  height 180px 
+.dn
+  display none
+for num in (0..20)
+  .mt{num * 5}
+    margin-top num * 5px
+  .mb{num * 5}
+    margin-bottom num * 5px
+.w100
+  width 100% !important
+.w240
+  width 240px
+.fw500
+  font-weight 500
+.more-btn 
+  width 100%
+.new-icon
+  color #D61E45
+#page-top
+  position fixed
+  display flex
+  width 42px
+  height 42px
+  bottom 30px
+  right 30px
+  color #fff
+  font-size 24px
+  align-items center
+  justify-content center
+  border-radius 50%
+  box-shadow 0 1px 3px 0 rgba(0, 0, 0, .1)
+  opacity 0
+  background #2c2c54
+  transition all 0.6s
+  &.active
+    opacity 1
+/* 
+ * contact form7 
+ */
+div.wpcf7 
+  .ajax-loader
+    display none !important
+.wpcf7-mail-sent-ok
+  display none !important
