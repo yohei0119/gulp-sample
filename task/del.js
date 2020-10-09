@@ -2,7 +2,7 @@ const rimraf = require('rimraf');
 
 // ソースマップを削除
 const delSourcemap = (cb) => {
-  rimraf('./docs/**/*.map', cb);
+  rimraf('./dist/**/*.map', cb);
 }
 
 module.exports = {

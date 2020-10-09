@@ -4,7 +4,7 @@ const { browserReload } = require('./browser');       // browser-sync
 
 const path = {
   images: './src/image/*', // 入力フォルダ
-  image: './docs/image',   // 出力フォルダ
+  image: './dist/image',   // 出力フォルダ
 }
 
 const buildImage = (cb) => {

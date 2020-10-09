@@ -5,7 +5,7 @@ const browsersync = require('browser-sync').create();
 const buildServer = () => {
   browsersync.init({
     server: {
-      baseDir: './docs/',
+      baseDir: './dist/',
       index  : 'index.html' 
     }
   });

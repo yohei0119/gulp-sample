@@ -8,7 +8,7 @@ const { mode } = require('./mode');                   // mode
 
 const path = {
   src: './src/scss/style.scss', // 入力フォルダ
-  dest: './docs/css',           // 出力フォルダ
+  dest: './dist/css',           // 出力フォルダ
 }
 
 // cssの出力形式を分岐

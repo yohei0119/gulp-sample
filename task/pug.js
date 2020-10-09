@@ -7,7 +7,7 @@ const { browserReload } = require('./browser');       // browser-sync
 const path = {
   pug: './src/pug/**/*.pug',       // 入力ファイル
   pugInc: '!./src/pug/**/_*.pug',  // 出力除外ファイル
-  html: './docs/',                 // 出力フォルダ
+  html: './dist/',                 // 出力フォルダ
 }
 
 const buildPug = (cb) => {

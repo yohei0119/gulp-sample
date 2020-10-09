@@ -11,7 +11,7 @@ const { browserReload } = require('./browser');       // browser-sync
 const path = {
   es6: './src/js/**/*.js',       // 入力フォルダ
   es6Inc: '!./src/js/**/_*.js',  // 出力除外ファイル
-  js: './docs/js',               // 出力フォルダ
+  js: './dist/js',               // 出力フォルダ
 }
 
 const buildJs = (cb) => {

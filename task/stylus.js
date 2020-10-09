@@ -11,7 +11,7 @@ const { browserReload } = require('./browser');       // browser-sync
 const path = {
   styl: './src/stylus/**/*.styl',       // 入力ファイル
   stylInc: '!./src/stylus/**/_*.styl',  // 出力除外ファイル
-  css: './docs/css',                    // 出力フォルダ
+  css: './dist/css',                    // 出力フォルダ
 }
 
 const buildStylus = (cb) => {
